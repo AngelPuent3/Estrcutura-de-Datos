@@ -5,8 +5,8 @@ public class MainColaDinamica
 {
 	public static void main(String[] args)
 	{
-		ColaDinamicaDos cola1 = new ColaDinamicaDos();
-		ColaDinamicaDos cola2 = new ColaDinamicaDos();
+		ColaDinamica cola1 = new ColaDinamica();
+		ColaDinamica cola2 = new ColaDinamica();
 		Scanner scan = new Scanner(System.in);
 
 		cola1.Inicializar();
@@ -40,7 +40,7 @@ public class MainColaDinamica
 	}
 
 
-	public static void PasarCola(ColaDinamicaDos origen, ColaDinamicaDos destino)               
+	public static void PasarCola(ColaDinamica origen, ColaDinamica destino)               
 	{
 		while (!origen.ColaVacia())
 		{
@@ -49,9 +49,9 @@ public class MainColaDinamica
 		}
 	}
 	
-	public static void CopiarCola(ColaDinamicaDos origen, ColaDinamicaDos destino)
+	public static void CopiarCola(ColaDinamica origen, ColaDinamica destino)
 	{
-		ColaDinamicaDos auxCola = new ColaDinamicaDos();
+		ColaDinamica auxCola = new ColaDinamica();
 		auxCola.Inicializar();
 		
 		PasarCola(origen, auxCola);
@@ -64,9 +64,9 @@ public class MainColaDinamica
 		}
 	}
 	
-	public static void MostrarCola(ColaDinamicaDos origen)
+	public static void MostrarCola(ColaDinamica origen)
 	{
-		ColaDinamicaDos auxCola = new ColaDinamicaDos();
+		ColaDinamica auxCola = new ColaDinamica();
 		auxCola.Inicializar();
 		
 		CopiarCola(origen, auxCola);

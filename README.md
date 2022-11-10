@@ -1,2 +1,2 @@
-# Estrcutura-de-Datos
+# Estructuras-de-Datos
 ## Java
